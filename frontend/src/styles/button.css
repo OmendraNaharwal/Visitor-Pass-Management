@@ -1,0 +1,29 @@
+/* button */
+
+.btn{
+
+    width:100%;
+
+    padding:12px;
+
+    background:#111111;
+
+    color:#ffffff;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    transition:.2s;
+
+}
+
+.btn:hover{
+
+    background:#333333;
+
+}

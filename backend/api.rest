@@ -83,3 +83,21 @@ Authorization: Bearer YOUR_TOKEN
 
 GET http://localhost:5000/api/auth/admin
 Authorization: Bearer YOUR_TOKEN
+
+###
+
+### Add Visitor
+
+POST http://localhost:5000/api/visitors
+Content-Type: application/json
+Authorization: Bearer YOUR_TOKEN
+
+{
+    "fullName":"Rahul Sharma",
+    "email":"rahul@gmail.com",
+    "phone":"9876543210",
+    "gender":"Male",
+    "company":"Infosys",
+    "purpose":"Project Discussion",
+    "host":"USER_ID"
+}

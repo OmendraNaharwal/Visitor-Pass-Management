@@ -3,6 +3,7 @@
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
+const path = require("path");
 
 const connectDB = require("./config/db");
 
@@ -20,6 +21,11 @@ app.use(express.json());
 
 // routes
 app.use("/api/auth", require("./routes/authRoutes"));
+// visitor routes
+app.use("/api/visitors", require("./routes/visitorRoutes"));
+// static folder
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+
 
 // test route
 app.get("/", (req, res) => {

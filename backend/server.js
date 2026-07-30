@@ -25,7 +25,11 @@ app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/visitors", require("./routes/visitorRoutes"));
 // static folder
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
-
+// appointment routes
+app.use(
+    "/api/appointments",
+    require("./routes/appointmentRoutes")
+);
 
 // test route
 app.get("/", (req, res) => {
